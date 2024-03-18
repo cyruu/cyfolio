@@ -66,6 +66,7 @@ function Navbar() {
       // burgerIcon.classList.toggle("colorwhite");
     });
     burgerIcon.addEventListener("blur", () => {
+      document.body.classList.remove("noscroll");
       burgerMenu.classList.remove("show");
     });
   }, []);

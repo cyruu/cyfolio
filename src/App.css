@@ -243,7 +243,7 @@ body {
 }
 @media only screen and (max-width: 431px) and (height < 745px) {
   .navbar {
-    margin-bottom: 30px;
+    margin-bottom: 17px;
   }
 }
 /* iphone */
