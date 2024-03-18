@@ -1,6 +1,6 @@
 .burgermenu {
   height: 90vh;
-  width: 70vw;
+  width: 80vw;
 
   position: fixed;
   top: 0;
@@ -55,14 +55,31 @@
   padding: 10px 15px;
   z-index: 55;
 }
-.show {
+/* .show {
   transform: translate(80px, 10vh);
-}
+} */
 
 @media only screen and (max-width: 431px) {
   .burgermenu {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+/* samsung */
+@media only screen and (350px < width < 409px) {
+  .show {
+    transform: translate(60px, 10vh);
+  }
+}
+@media only screen and (409px < width < 419px) {
+  .show {
+    transform: translate(70px, 10vh);
+  }
+}
+/* iphone 14 */
+@media only screen and (421px < width < 431px) {
+  .show {
+    transform: translate(80px, 10vh);
   }
 }

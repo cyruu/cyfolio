@@ -1,16 +1,26 @@
 #projects {
   min-height: 90vh;
+  /* background-color: red; */
+  overflow-x: hidden;
 }
 /* flex justify-evenly my-7 */
-#firstproject {
+#firstproject,
+#secondproject {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  margin: 30px 0;
+  margin: 10px 0 20px;
   width: 90%;
+  transition: all 0.5s ease-out;
+  opacity: 0;
 }
-
+#firstproject {
+  transform: translateX(-600px);
+}
+#secondproject {
+  transform: translateX(600px);
+}
 #title {
   z-index: 10;
   transition: all 0.3s ease;
@@ -41,25 +51,47 @@
 }
 
 .projectcont {
-  width: 100%;
+  width: 90%;
 }
-.secondproject {
-  margin-bottom: 13px;
-}
+
 #projecttitle {
-  margin-top: 50px;
-  transition: all 0.6s ease-out;
+  margin: 30px 0;
+
+  transition: all 0.45s ease-in;
 }
 /* project design start */
 .project {
-  height: 275px;
-  width: 210px;
-  border: 1px solid gray;
+  height: 255px;
+  width: 200px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   overflow: hidden;
   display: flex;
   /* background-color: yellow; */
   flex-direction: column;
+  position: relative;
+}
+.dark {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+
+  transition: all 0.2s ease-out;
+}
+.project:hover .dark {
+  opacity: 1;
+}
+.demo {
+  background-color: white;
+  color: black;
+  padding: 10px 18px;
+  border-radius: 20px;
+  font-size: 0.8rem;
 }
 .projimage {
   width: 100%;
@@ -72,10 +104,10 @@
 .projdesc {
   height: 35%;
   width: 100%;
+  /* background-color: rgb(60, 60, 60); */
 }
 .tools {
   height: 55%;
-  padding-top: 5px;
 
   /* background-color: red; */
   display: flex;
@@ -86,11 +118,12 @@
 }
 .tool {
   margin: 0px 2.5px 5px;
-  font-size: 0.6rem;
+  font-size: 0.45rem;
   /* background-color: rgb(39, 39, 39); */
-  border: 1px solid rgb(160, 160, 160);
-  padding: 3px 7px 2px 7px;
-  color: black;
+  border: 1px solid rgba(255, 255, 255, 0.317);
+  padding: 2px 5px 1px 5px;
+  background-color: rgb(70, 70, 70);
+  color: white;
   border-radius: 10px;
 }
 .projtitle {

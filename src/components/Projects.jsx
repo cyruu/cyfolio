@@ -7,9 +7,11 @@ function Projects() {
   useEffect(() => {
     const projectSection = document.getElementById("projects");
     const projecttitle = document.getElementById("projecttitle");
+    const firstProject = document.getElementById("firstproject");
+    const secondProject = document.getElementById("secondproject");
     //project title observer
     const projecttitleObserver = new IntersectionObserver(
-      function (entities, obsercer) {
+      function (entities, observer) {
         entities.forEach((entity) => {
           if (entity.isIntersecting) {
             projecttitle.style.opacity = 1;
@@ -20,10 +22,33 @@ function Projects() {
         });
       },
       {
-        threshold: 0.6,
+        threshold: 0.35,
       }
     );
     projecttitleObserver.observe(projectSection);
+    // first project observer
+    const firstProjectObserver = new IntersectionObserver(
+      function (entities, observer) {
+        entities.forEach((entity) => {
+          if (entity.isIntersecting) {
+            firstProject.style.opacity = 1;
+            firstProject.style.transform = "translateX(0)";
+            secondProject.style.opacity = 1;
+            secondProject.style.transform = "translateX(0)";
+          } else {
+            firstProject.style.transform = "translateX(-600px)";
+            firstProject.style.opacity = 0;
+            secondProject.style.transform = "translateX(600px)";
+            secondProject.style.opacity = 0;
+            // console.log("dont");
+          }
+        });
+      },
+      {
+        threshold: 0.7,
+      }
+    );
+    firstProjectObserver.observe(projectSection);
   }, []);
   return (
     <section id="projects" className="">
@@ -33,6 +58,7 @@ function Projects() {
           Projects
         </p>
         {/* second */}
+        {/* first project */}
         <div id="firstproject" className="">
           {/* proj 1 */}
           <a
@@ -40,10 +66,14 @@ function Projects() {
             target="_blank"
             className="project"
           >
+            <div className="dark">
+              <button className="demo">View Demo</button>
+            </div>
             <div className="projimage">
               <img src={tictac} alt="" />
             </div>
             <div className="projdesc">
+              <div className="projtitle">TicTacToe</div>
               <div className="tools">
                 <div className="tool">Tailwind</div>
 
@@ -51,7 +81,6 @@ function Projects() {
                 <div className="tool">HTML</div>
                 <div className="tool">CSS</div>
               </div>
-              <div className="projtitle">TicTacToe</div>
             </div>
           </a>
           {/* proj 2 */}
@@ -59,21 +88,170 @@ function Projects() {
             href="https://cyruu.github.io/react_TodoApplication/"
             target="_blank"
             className="project"
-          ></a>
+          >
+            <div className="dark">
+              <button className="demo">View Demo</button>
+            </div>
+            <div className="projimage">
+              <img src={todo} alt="" />
+            </div>
+            <div className="projdesc">
+              <div className="projtitle">Todo App</div>
+              <div className="tools">
+                <div className="tool">Tailwind</div>
+
+                <div className="tool">React</div>
+                <div className="tool">HTML</div>
+                <div className="tool">CSS</div>
+              </div>
+            </div>
+          </a>
+
           {/* proj 3 */}
           <a
-            href="https://react-chat-app-three-puce.vercel.app/"
+            href="https://react-chat-app-wlkh.vercel.app/"
             target="_blank"
             className="project"
-          ></a>
+          >
+            <div className="dark">
+              <button className="demo">View Demo</button>
+            </div>
+            <div className="projimage">
+              <img src={chat} alt="" />
+            </div>
+            <div className="projdesc">
+              <div className="projtitle">Chat App</div>
+              <div className="tools">
+                <div className="tool">Tailwind</div>
+
+                <div className="tool">React</div>
+                <div className="tool">HTML</div>
+                <div className="tool">CSS</div>
+              </div>
+            </div>
+          </a>
+
           {/* proj 4 */}
           <a
-            href="https://react-chat-app-three-puce.vercel.app/"
+            href="https://react-chat-app-wlkh.vercel.app/"
             target="_blank"
             className="project"
-          ></a>
+          >
+            <div className="dark">
+              <button className="demo">View Demo</button>
+            </div>
+            <div className="projimage">
+              <img src={chat} alt="" />
+            </div>
+            <div className="projdesc">
+              <div className="projtitle">Chat App</div>
+              <div className="tools">
+                <div className="tool">Tailwind</div>
+
+                <div className="tool">React</div>
+                <div className="tool">HTML</div>
+                <div className="tool">CSS</div>
+              </div>
+            </div>
+          </a>
         </div>
         {/* third */}
+        <div id="secondproject" className="">
+          {/* proj 1 */}
+          <a
+            href="https://tictactoetest.vercel.app/"
+            target="_blank"
+            className="project"
+          >
+            <div className="dark">
+              <button className="demo">View Demo</button>
+            </div>
+            <div className="projimage">
+              <img src={tictac} alt="" />
+            </div>
+            <div className="projdesc">
+              <div className="projtitle">TicTacToe</div>
+              <div className="tools">
+                <div className="tool">Tailwind</div>
+
+                <div className="tool">React</div>
+                <div className="tool">HTML</div>
+                <div className="tool">CSS</div>
+              </div>
+            </div>
+          </a>
+          {/* proj 2 */}
+          <a
+            href="https://cyruu.github.io/react_TodoApplication/"
+            target="_blank"
+            className="project"
+          >
+            <div className="dark">
+              <button className="demo">View Demo</button>
+            </div>
+            <div className="projimage">
+              <img src={todo} alt="" />
+            </div>
+            <div className="projdesc">
+              <div className="projtitle">Todo App</div>
+              <div className="tools">
+                <div className="tool">Tailwind</div>
+
+                <div className="tool">React</div>
+                <div className="tool">HTML</div>
+                <div className="tool">CSS</div>
+              </div>
+            </div>
+          </a>
+
+          {/* proj 3 */}
+          <a
+            href="https://react-chat-app-wlkh.vercel.app/"
+            target="_blank"
+            className="project"
+          >
+            <div className="dark">
+              <button className="demo">View Demo</button>
+            </div>
+            <div className="projimage">
+              <img src={chat} alt="" />
+            </div>
+            <div className="projdesc">
+              <div className="projtitle">Chat App</div>
+              <div className="tools">
+                <div className="tool">Tailwind</div>
+
+                <div className="tool">React</div>
+                <div className="tool">HTML</div>
+                <div className="tool">CSS</div>
+              </div>
+            </div>
+          </a>
+
+          {/* proj 4 */}
+          <a
+            href="https://react-chat-app-wlkh.vercel.app/"
+            target="_blank"
+            className="project"
+          >
+            <div className="dark">
+              <button className="demo">View Demo</button>
+            </div>
+            <div className="projimage">
+              <img src={chat} alt="" />
+            </div>
+            <div className="projdesc">
+              <div className="projtitle">Chat App</div>
+              <div className="tools">
+                <div className="tool">Tailwind</div>
+
+                <div className="tool">React</div>
+                <div className="tool">HTML</div>
+                <div className="tool">CSS</div>
+              </div>
+            </div>
+          </a>
+        </div>
       </div>
     </section>
   );

@@ -124,7 +124,7 @@ function AboutMe() {
         </div>
         <div className="resume flex mt-12 flex-col">
           <p className="themeColor mb-5">Take a look at my Résumé</p>
-          <a href="#" className="button px-4 py-2 m-auto">
+          <a href="#" className="button resumebutton ">
             Résumé
             <i className="ri-download-fill ml-2"></i>
           </a>

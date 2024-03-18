@@ -136,7 +136,7 @@ function Home() {
               <span className="blue">हेलो !</span> <span>I'm</span>
             </p>
             <p className="name">
-              Cyrus<span className="blue name ml-8">Maharjan</span>
+              Cyrus<span className="secondname name">Maharjan</span>
             </p>
 
             <p className="small">
@@ -144,14 +144,7 @@ function Home() {
               Extremely delighted to share my portfolio with you.
             </p>
             <div className="buttons flex">
-              <a
-                href="#projects"
-                className="button px-3 py-2 mt-10 "
-                style={{
-                  position: "relative",
-                  //  overflow: "hidden"
-                }}
-              >
+              <a href="#projects" className="button ">
                 <span>My Projects</span>
                 <i className="ri-arrow-right-line ml-2"></i>
               </a>
