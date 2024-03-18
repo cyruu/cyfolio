@@ -212,7 +212,7 @@ body {
   } */
   #projecttitle {
     /* margin: 10px 0; */
-    background-color: red;
+    /* background-color: red; */
   }
   .links a {
     font-size: 1.03rem;
@@ -241,6 +241,11 @@ body {
     transform: translateX(-65px);
   }
 }
+@media only screen and (max-width: 431px) and (height < 745px) {
+  .navbar {
+    margin-bottom: 30px;
+  }
+}
 /* iphone */
 @media only screen and (max-width: 431px) {
   .socials {
@@ -262,7 +267,8 @@ body {
   }
   .navbar {
     width: 100%;
-
+    background-color: rgb(45, 45, 45);
+    color: white;
     padding: 0 15px;
     height: 10vh;
     display: flex;
@@ -279,7 +285,7 @@ body {
     margin-left: 15px;
   }
   .pic {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   .intro {
     padding-bottom: 45px;

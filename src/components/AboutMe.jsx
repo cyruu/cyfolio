@@ -71,7 +71,7 @@ function AboutMe() {
     <section id="aboutme" className=" text-center">
       <div
         id="who"
-        className="flex  mx-auto justify-center  flex-col items-center w-[75%]"
+        className="flex  mx-auto justify-center  flex-col items-center"
       >
         {/* first */}
         <p

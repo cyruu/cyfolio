@@ -56,14 +56,13 @@ function Navbar() {
       }
     });
     //burger
-    const navbar = document.getElementById("navbar");
+    const home = document.getElementById("home");
     const burgerIcon = document.getElementById("burgericon");
     const burgerMenu = document.querySelector(".burgermenu");
 
     burgerIcon.addEventListener("click", () => {
-      navbar.classList.toggle("burgerclicked");
       burgerMenu.classList.toggle("show");
-
+      document.body.classList.toggle("noscroll");
       // burgerIcon.classList.toggle("colorwhite");
     });
     burgerIcon.addEventListener("blur", () => {

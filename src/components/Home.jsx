@@ -9,6 +9,8 @@ function Home() {
     const burgerlink = document.querySelectorAll(".burgerlink");
 
     window.addEventListener("scroll", () => {
+      let screenWidth = window.screen.width;
+
       if (window.scrollY > 150) {
         nav.style.color = "white";
         nav.style.backgroundColor = "rgb(45,45,45)";
@@ -32,12 +34,13 @@ function Home() {
           line.style.backgroundColor = "black";
         });
         // activeLine.style.marginBottom = "0px";
+        if (!(screenWidth < 431)) {
+          nav.style.color = "black";
 
-        nav.style.color = "black";
-
-        activeLine.style.backgroundColor = "black";
-        nav.style.backgroundColor = "white";
-        nav.style.boxShadow = "none";
+          activeLine.style.backgroundColor = "black";
+          nav.style.backgroundColor = "white";
+          nav.style.boxShadow = "none";
+        }
       }
     });
   }, []);

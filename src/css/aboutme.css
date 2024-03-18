@@ -17,7 +17,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px;
+  margin: 10px 15px;
 }
 .skill img {
   background-position: center;
@@ -26,7 +26,9 @@
 #abouttext {
   transition: all 0.6s ease-out;
 }
-
+#who {
+  width: 75%;
+}
 #aboutpara {
   transform: translateX(-300px);
   transition: all 0.55s ease-out;
@@ -62,7 +64,17 @@
     width: 95%;
   }
   .skill {
-    height: 50px;
-    width: 50px;
+    height: 35px;
+    width: 35px;
+    margin: 10px 7px;
+  }
+  .resume p {
+    font-size: 0.75rem;
+  }
+  .resume a {
+    font-size: 0.85rem;
+  }
+  #who {
+    width: 90%;
   }
 }
