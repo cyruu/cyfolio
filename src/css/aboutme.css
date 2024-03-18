@@ -1,0 +1,65 @@
+#aboutme {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  /* background-color: red; */
+}
+
+.themeColor {
+  color: var(--themeColor);
+}
+
+.skill {
+  height: 70px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+.skill img {
+  background-position: center;
+  height: 90%;
+}
+#abouttext {
+  transition: all 0.6s ease-out;
+}
+
+#aboutpara {
+  transform: translateX(-300px);
+  transition: all 0.55s ease-out;
+}
+#skillresume {
+  opacity: 0;
+  transform: translateX(300px);
+  transition: all 0.55s ease-out;
+  /* transition-delay: 0.45s; */
+}
+#aboutpara {
+  width: 70%;
+}
+#skills {
+  width: 65%;
+}
+
+@media only screen and (max-width: 431px) {
+  body {
+    overflow-x: hidden;
+  }
+  #abouttext {
+    font-size: 1.7rem;
+  }
+  #aboutpara {
+    width: 95%;
+    font-size: 0.75rem;
+  }
+  #skills {
+    width: 95%;
+  }
+  .skill {
+    height: 50px;
+    width: 50px;
+  }
+}

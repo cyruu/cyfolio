@@ -1,0 +1,84 @@
+.intro-pic {
+  width: 75%;
+  display: flex;
+  align-items: center;
+
+  /* margin-inline: auto; */
+}
+.pic {
+  flex: 1;
+}
+/* flex flex-col h-[100%]   flex-1 justify-center items-start */
+.intro {
+  /* background-color: blue; */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.socials {
+  top: 0;
+  left: 0px;
+  position: absolute;
+}
+.social-icon {
+  height: 40px;
+  width: 150px;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.instagram {
+  top: 20px;
+  left: -15px;
+}
+.linkedin {
+  top: 90px;
+  left: -75px;
+}
+.github {
+  top: 160px;
+  left: -75px;
+}
+.youtube {
+  top: 230px;
+  left: -15px;
+}
+.icon {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  /* background-color: blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+}
+.social-content {
+  color: white;
+  border-radius: 20px;
+  transform: translateX(110px);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+}
+.social-content:hover {
+  transform: translateX(0);
+}
+.github .social-content {
+  background-color: black;
+}
+.linkedin .social-content {
+  background-color: var(--likedin);
+}
+.instagram .social-content {
+  background: var(--instagram);
+}
+.youtube .social-content {
+  background-color: var(--youtube);
+}
