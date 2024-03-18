@@ -56,11 +56,14 @@ function Navbar() {
       }
     });
     //burger
+    const navbar = document.getElementById("navbar");
     const burgerIcon = document.getElementById("burgericon");
     const burgerMenu = document.querySelector(".burgermenu");
 
     burgerIcon.addEventListener("click", () => {
+      navbar.classList.toggle("burgerclicked");
       burgerMenu.classList.toggle("show");
+
       // burgerIcon.classList.toggle("colorwhite");
     });
     burgerIcon.addEventListener("blur", () => {
@@ -82,7 +85,7 @@ function Navbar() {
   };
   return (
     <>
-      <nav className="navbar">
+      <nav className="navbar" id="navbar">
         <div className="burgermenu">
           <div className="burgerlinks">
             <a href="#home" className="burgerlink">

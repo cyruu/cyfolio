@@ -133,7 +133,7 @@ function Home() {
           </div>
           <div id="intro" className=" intro">
             <p className="hello">
-              <span className="blue">हेलो !</span> <span>I'm</span>
+              <span className="secondname">हेलो !</span> <span>I'm</span>
             </p>
             <p className="name">
               Cyrus<span className="secondname name">Maharjan</span>

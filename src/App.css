@@ -40,7 +40,13 @@ body {
   align-items: center;
   height: 10vh;
 }
-
+.burgerclicked {
+  background-color: rgb(45, 45, 45);
+  color: white;
+}
+.noscroll {
+  overflow-y: hidden;
+}
 .logo {
   font-family: "Orbitron", sans-serif;
   font-optical-sizing: auto;
