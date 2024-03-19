@@ -26,6 +26,12 @@ function Projects() {
       }
     );
     projecttitleObserver.observe(projectSection);
+    // threshold for mobile
+    let tempthreshold = 0.7;
+    let screenWidth = window.screen.width;
+    if (screenWidth < 431) {
+      tempthreshold = 0.45;
+    }
     // first project observer
     const firstProjectObserver = new IntersectionObserver(
       function (entities, observer) {
@@ -45,7 +51,7 @@ function Projects() {
         });
       },
       {
-        threshold: 0.7,
+        threshold: tempthreshold,
       }
     );
     firstProjectObserver.observe(projectSection);

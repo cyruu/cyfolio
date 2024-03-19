@@ -138,16 +138,34 @@
   body {
     overflow-x: hidden;
   }
-  #firstproject {
+  .projectcont {
+    width: 100%;
+  }
+  #projecttitle {
+    margin: 50px 0px 25px;
+  }
+  #firstproject,
+  #secondproject {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
   }
-  .secondproject {
-    margin-bottom: 5px;
+  #secondproject {
+    margin-top: 0px;
   }
-
+  .project {
+    height: 215px;
+    width: 160px;
+    margin-bottom: 15px;
+  }
   #title {
     transform: scale(0.9);
     z-index: 0;
+  }
+  .projtitle {
+    font-size: 1.05rem;
+  }
+  .tool {
+    font-size: 0.35rem;
   }
 }

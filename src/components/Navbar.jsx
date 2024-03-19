@@ -6,6 +6,7 @@ function Navbar() {
     let slidePixel = offsetIndex * fixedPixel;
     return slidePixel;
   };
+
   useEffect(() => {
     const activeLine = document.getElementById("activeline");
     const navBarHeight = 73.75 + 250;
@@ -57,6 +58,9 @@ function Navbar() {
     });
     //burger
     const home = document.getElementById("home");
+    const aboutme = document.getElementById("aboutme");
+    const projects = document.getElementById("projects");
+    const blog = document.getElementById("blog");
     const burgerIcon = document.getElementById("burgericon");
     const burgerMenu = document.querySelector(".burgermenu");
 
@@ -65,11 +69,36 @@ function Navbar() {
       document.body.classList.toggle("noscroll");
       // burgerIcon.classList.toggle("colorwhite");
     });
-    burgerIcon.addEventListener("blur", () => {
+    // burgerIcon.addEventListener("blur", () => {
+    //   document.body.classList.remove("noscroll");
+    //   burgerMenu.classList.remove("show");
+    // });
+    function removeBurgerMenu() {
       document.body.classList.remove("noscroll");
       burgerMenu.classList.remove("show");
+    }
+    // on blur hatayera particular section lai click garda burgermenu hatne
+    home.addEventListener("click", () => {
+      removeBurgerMenu();
+    });
+    aboutme.addEventListener("click", () => {
+      removeBurgerMenu();
+    });
+    projects.addEventListener("click", () => {
+      removeBurgerMenu();
+    });
+    blog.addEventListener("click", () => {
+      removeBurgerMenu();
+    });
+    // harek menu lai thickda ni burgermenu hatna paryo
+    const burgerLinks = document.querySelectorAll(".burgerlink");
+    burgerLinks.forEach((burgerLink) => {
+      burgerLink.addEventListener("click", () => {
+        removeBurgerMenu();
+      });
     });
   }, []);
+
   const slideActiveLine = (e) => {
     const activeLine = document.getElementById("activeline");
     activeLine.style.transition = "none";
