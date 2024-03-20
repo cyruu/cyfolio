@@ -69,7 +69,7 @@ function Blog() {
         <div id="firstblog">
           {/* blog1 */}
           <a
-            href="/src/blogs/loginanimation.html"
+            href="/loginanimation.html"
             rel="noopener noreferrer"
             className="blogitem"
             target="_blank"
