@@ -19,6 +19,7 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 70px;
+  scroll-snap-type: y mandatory;
 }
 body {
   width: 100vw;
@@ -165,10 +166,14 @@ body {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
   /* background-color: blue; */
 }
 #aboutme {
   overflow: hidden;
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
 }
 .burger {
   display: none;
