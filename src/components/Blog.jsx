@@ -68,7 +68,12 @@ function Blog() {
         {/* first blog */}
         <div id="firstblog">
           {/* blog1 */}
-          <a href="#" className="blogitem">
+          <a
+            href="/src/blogs/loginanimation.html"
+            rel="noopener noreferrer"
+            className="blogitem"
+            target="_blank"
+          >
             <div className="blogimage">
               <img src={loginimage} alt="" />
             </div>
