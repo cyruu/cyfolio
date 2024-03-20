@@ -85,21 +85,32 @@
 .blogitem:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
-
+/* hamro mobile */
+@media only screen and (width < 396px) {
+  .blogname {
+    font-size: 0.85rem;
+  }
+  .blogsmall {
+    font-size: 0.7rem;
+  }
+  .project {
+    margin: 0px 0px 20px 25px;
+  }
+}
 /* aaus */
 @media only screen and (1200px < width < 1300px) {
-  .blogname {
-    font-size: 1.05rem;
-  }
   .blogitem {
     margin: 0px 0px 30px 74px;
   }
 }
-/* phone */
-@media only screen and (max-width: 431px) {
+/* iphone */
+@media only screen and (396px < width < 431px) {
   .blogname {
     font-size: 0.9rem;
   }
+}
+/* phone */
+@media only screen and (max-width: 431px) {
   #blogtitle {
     font-size: 1.66rem;
   }
@@ -114,7 +125,7 @@
     align-items: center;
   }
   .blogitem {
-    width: 90%;
+    width: 94%;
     margin: 0;
     margin-bottom: 20px;
     min-height: 100px;

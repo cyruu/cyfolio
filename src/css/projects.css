@@ -135,7 +135,34 @@
   align-items: center;
   font-size: 1.4rem;
 }
-@media only screen and (max-width: 431px) {
+
+@media only screen and (width< 366px) {
+  #projects {
+  }
+  .projtitle {
+    font-size: 1rem;
+  }
+
+  .project {
+    height: 185px;
+    width: 135px;
+    margin: 0px 0px 20px 15px;
+  }
+  .tools {
+    padding-bottom: 2px;
+  }
+  .tool {
+    /* background-color: red; */
+    margin: 0;
+  }
+  #firstproject,
+  #secondproject {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+@media only screen and (366px< width< 431px) {
   body {
     overflow-x: hidden;
   }
