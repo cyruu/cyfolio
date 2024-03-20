@@ -61,6 +61,10 @@
   font-size: 1.1rem;
   font-weight: bold;
 }
+.blogdate {
+  font-size: 0.7rem;
+  color: gray;
+}
 .blogsmall {
   margin-top: 5px;
   font-size: 0.7rem;

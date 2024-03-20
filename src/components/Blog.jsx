@@ -79,8 +79,10 @@ function Blog() {
             </div>
             <div className="blogdesc">
               <p className="blogname">
-                How to create login animation using HTML,CSS,JS.
+                How to create login animation using HTML, CSS, JS.
               </p>
+
+              <p className="blogdate">20 March, 2024</p>
               <div className="blogsmall">
                 Learn to use simple js along with HTML and CSS. Create login
                 form animation.

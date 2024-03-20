@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "poppins";
+}
+body {
+  display: flex;
+  overflow-x: hidden;
+  justify-content: center;
+
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.blogcontainer {
+  width: 70%;
+  min-height: 85px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  background-color: white;
+  padding: 10px 60px;
+  margin: 50px 0px;
+}
+.blogtitle {
+  width: 85%;
+  text-align: center;
+  font-size: 1.9rem;
+  margin: 20px auto 0px;
+  font-weight: bold;
+}
+.blogdate {
+  text-align: center;
+  color: gray;
+  font-size: 0.9rem;
+}
+.introduction {
+  width: 85%;
+  text-align: left;
+  margin: 30px auto 0px;
+  font-size: 0.9rem;
+}
+.ytvideo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+.indexhtml,
+.stylecss {
+  font-size: 0.9rem;
+}
+.bold {
+  font-weight: bold;
+}
+pre {
+  position: relative;
+}
+#copycss,
+#copyhtml {
+  position: absolute;
+  top: 13%;
+  right: 28%;
+  background: none;
+  color: gray;
+  border: 1px solid gray;
+  cursor: pointer;
+  border-radius: 7px;
+}
+code {
+  font-size: 0.9rem;
+  max-height: 500px;
+  width: 75%;
+}
+.fa-copy {
+  padding: 10px;
+  font-size: 1.1rem;
+}
+#csscopied,
+#htmlcopied {
+  top: 45px;
+  left: -5px;
+  position: absolute;
+  opacity: 0;
+}
+.ytvideo iframe {
+  height: 315px;
+  width: 560px;
+}
+@media only screen and (max-width: 431px) {
+  .blogcontainer {
+    width: 100%;
+    margin: 0;
+  }
+  .blogtitle {
+    font-size: 1.3rem;
+  }
+  .blogdate {
+    font-size: 0.9rem;
+  }
+  .introduction {
+    font-size: 0.78rem;
+  }
+  .ytvideo iframe {
+    width: 90%;
+    height: 230px;
+  }
+  .codes {
+    padding: 0px 20px;
+  }
+  code {
+    width: 90%;
+    font-size: 0.75rem;
+    max-height: 400px;
+  }
+  #copycss,
+  #copyhtml {
+    top: 13%;
+    right: 10%;
+  }
+  .fa-copy {
+    font-size: 0.9rem;
+  }
+}
