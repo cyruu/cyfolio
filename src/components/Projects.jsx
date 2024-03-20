@@ -22,7 +22,7 @@ function Projects() {
         });
       },
       {
-        threshold: 0.35,
+        threshold: 0.3,
       }
     );
     projecttitleObserver.observe(projectSection);
@@ -60,7 +60,7 @@ function Projects() {
     <section id="projects" className="">
       <div className="projectcont flex  mx-auto justify-center  flex-col items-center ">
         {/* first */}
-        <p id="projecttitle" className="text-4xl font-bold my-6 text-gray-600">
+        <p id="projecttitle" className="text-4xl font-bold text-gray-600">
           Projects
         </p>
         {/* second */}
@@ -104,9 +104,8 @@ function Projects() {
             <div className="projdesc">
               <div className="projtitle">Todo App</div>
               <div className="tools">
-                <div className="tool">Tailwind</div>
-
                 <div className="tool">React</div>
+                <div className="tool">Tailwind</div>
                 <div className="tool">HTML</div>
                 <div className="tool">CSS</div>
               </div>
@@ -128,9 +127,9 @@ function Projects() {
             <div className="projdesc">
               <div className="projtitle">Chat App</div>
               <div className="tools">
-                <div className="tool">Tailwind</div>
-
                 <div className="tool">React</div>
+                <div className="tool">Tailwind</div>
+                <div className="tool">Redux</div>
                 <div className="tool">HTML</div>
                 <div className="tool">CSS</div>
               </div>
@@ -138,125 +137,10 @@ function Projects() {
           </a>
 
           {/* proj 4 */}
-          <a
-            href="https://react-chat-app-wlkh.vercel.app/"
-            target="_blank"
-            className="project"
-          >
-            <div className="dark">
-              <button className="demo">View Demo</button>
-            </div>
-            <div className="projimage">
-              <img src={chat} alt="" />
-            </div>
-            <div className="projdesc">
-              <div className="projtitle">Chat App</div>
-              <div className="tools">
-                <div className="tool">Tailwind</div>
-
-                <div className="tool">React</div>
-                <div className="tool">HTML</div>
-                <div className="tool">CSS</div>
-              </div>
-            </div>
-          </a>
         </div>
         {/* third */}
         <div id="secondproject" className="">
           {/* proj 1 */}
-          <a
-            href="https://tictactoetest.vercel.app/"
-            target="_blank"
-            className="project"
-          >
-            <div className="dark">
-              <button className="demo">View Demo</button>
-            </div>
-            <div className="projimage">
-              <img src={tictac} alt="" />
-            </div>
-            <div className="projdesc">
-              <div className="projtitle">TicTacToe</div>
-              <div className="tools">
-                <div className="tool">Tailwind</div>
-
-                <div className="tool">React</div>
-                <div className="tool">HTML</div>
-                <div className="tool">CSS</div>
-              </div>
-            </div>
-          </a>
-          {/* proj 2 */}
-          <a
-            href="https://cyruu.github.io/react_TodoApplication/"
-            target="_blank"
-            className="project"
-          >
-            <div className="dark">
-              <button className="demo">View Demo</button>
-            </div>
-            <div className="projimage">
-              <img src={todo} alt="" />
-            </div>
-            <div className="projdesc">
-              <div className="projtitle">Todo App</div>
-              <div className="tools">
-                <div className="tool">Tailwind</div>
-
-                <div className="tool">React</div>
-                <div className="tool">HTML</div>
-                <div className="tool">CSS</div>
-              </div>
-            </div>
-          </a>
-
-          {/* proj 3 */}
-          <a
-            href="https://react-chat-app-wlkh.vercel.app/"
-            target="_blank"
-            className="project"
-          >
-            <div className="dark">
-              <button className="demo">View Demo</button>
-            </div>
-            <div className="projimage">
-              <img src={chat} alt="" />
-            </div>
-            <div className="projdesc">
-              <div className="projtitle">Chat App</div>
-              <div className="tools">
-                <div className="tool">Tailwind</div>
-
-                <div className="tool">React</div>
-                <div className="tool">HTML</div>
-                <div className="tool">CSS</div>
-              </div>
-            </div>
-          </a>
-
-          {/* proj 4 */}
-          <a
-            href="https://react-chat-app-wlkh.vercel.app/"
-            target="_blank"
-            className="project"
-          >
-            <div className="dark">
-              <button className="demo">View Demo</button>
-            </div>
-            <div className="projimage">
-              <img src={chat} alt="" />
-            </div>
-            <div className="projdesc">
-              <div className="projtitle">Chat App</div>
-              <div className="tools">
-                <div className="tool">Tailwind</div>
-
-                <div className="tool">React</div>
-                <div className="tool">HTML</div>
-                <div className="tool">CSS</div>
-              </div>
-            </div>
-          </a>
         </div>
       </div>
     </section>

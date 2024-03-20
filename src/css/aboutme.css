@@ -6,6 +6,12 @@
   overflow: hidden;
   /* background-color: red; */
 }
+.resume {
+  margin-top: 20px;
+}
+#abouttext {
+  margin-top: 0px;
+}
 
 .themeColor {
   color: var(--themeColor);

@@ -1,2 +1,127 @@
 #blog {
+  min-height: 90vh;
+}
+.blogitems {
+  width: 90%;
+  margin-inline: auto;
+  /* background-color: red; */
+  display: flex;
+  justify-content: first baseline;
+  flex-wrap: wrap;
+}
+#firstblog,
+#secondblog {
+  display: flex;
+  justify-content: first baseline;
+  flex-wrap: wrap;
+  transition: all 0.4s ease-out;
+  opacity: 0;
+}
+#blogtitle {
+  transition: all 0.5s ease-out;
+}
+#firstblog {
+  transform: translateX(-600px);
+}
+#secondblog {
+  transform: translateX(600px);
+}
+.blogitem {
+  min-height: 160px;
+  width: 40%;
+  /* background-color: blue; */
+  border: 1px solid rgb(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+
+  margin: 0px 0px 30px 95px;
+  transition: all 0.25s ease;
+}
+.blogimage {
+  height: 100%;
+  width: 35%;
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 6px;
+}
+.blogimage img {
+  /* height: 100%; */
+}
+.blogdesc {
+  width: 65%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.blogname {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.blogsmall {
+  margin-top: 5px;
+  font-size: 0.7rem;
+}
+.blogbutton {
+  margin-top: 10px;
+  /* background-color: rgb(45, 45, 45); */
+  border: 1px solid rgb(45, 45, 45);
+  color: rgb(45, 45, 45);
+  width: max-content;
+  padding: 7px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  margin-left: auto;
+  margin-right: 20px;
+  transition: all 0.25s ease;
+}
+.blogitem:hover .blogbutton {
+  background-color: rgb(45, 45, 45);
+  color: white;
+}
+.blogitem:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* aaus */
+@media only screen and (1200px < width < 1300px) {
+  .blogname {
+    font-size: 1.05rem;
+  }
+  .blogitem {
+    margin: 0px 0px 30px 74px;
+  }
+}
+/* phone */
+@media only screen and (max-width: 431px) {
+  .blogname {
+    font-size: 0.9rem;
+  }
+  #blogtitle {
+    font-size: 1.66rem;
+  }
+  .blogdesc {
+    padding: 10px 8px;
+  }
+  .blogitems {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .blogitem {
+    width: 90%;
+    margin: 0;
+    margin-bottom: 20px;
+    min-height: 100px;
+  }
+  #firstblog,
+  #secondblog {
+    display: flex;
+    justify-content: center;
+  }
 }

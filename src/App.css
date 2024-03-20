@@ -213,8 +213,10 @@ body {
     background-color: rgb(18, 199, 130);
   } */
   #projecttitle {
-    /* margin: 10px 0; */
-    /* background-color: red; */
+  }
+  .project {
+    height: 235px;
+    width: 180px;
   }
   .links a {
     font-size: 1.03rem;

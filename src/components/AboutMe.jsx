@@ -122,7 +122,7 @@ function AboutMe() {
             <img src={mysql} alt="" />
           </div>
         </div>
-        <div className="resume flex mt-12 flex-col">
+        <div className="resume flex flex-col">
           <p className="themeColor mb-5">Take a look at my Résumé</p>
           <a href="#" className="button resumebutton ">
             Résumé
