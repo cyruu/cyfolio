@@ -38,7 +38,7 @@ body {
   font-size: 2rem;
   flex: 0.35;
   color: white;
-  margin-left: 100px;
+  margin-left: 110px;
 }
 .blognav a {
   text-decoration: none;
@@ -204,5 +204,12 @@ code {
   }
   .fa-copy {
     font-size: 0.9rem;
+  }
+  .links {
+    display: none;
+  }
+  .logo {
+    font-size: 1.8rem;
+    margin: 0px 0px 0px 40px;
   }
 }

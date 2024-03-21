@@ -1,3 +1,13 @@
+.burger {
+  background: none;
+  border: none;
+  padding: 10px;
+}
+.burgerremixicon {
+  color: white;
+  padding: 10px;
+  font-size: 2rem;
+}
 .burgermenu {
   height: 90vh;
   width: 80vw;
@@ -64,6 +74,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  #burgericon {
+    display: block;
   }
 }
 /* samsung */
