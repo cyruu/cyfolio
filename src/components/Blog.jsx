@@ -2,6 +2,16 @@ import React, { useEffect } from "react";
 import "../css/blog.css";
 import loginimage from "../images/login.png";
 function Blog() {
+  // In your React component
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      const element = document.querySelector(hash);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, []);
   useEffect(() => {
     const blogSection = document.getElementById("blog");
     const blogTitle = document.getElementById("blogtitle");
@@ -72,7 +82,6 @@ function Blog() {
             href="/loginanimation.html"
             rel="noopener noreferrer"
             className="blogitem"
-            target="_blank"
           >
             <div className="blogimage">
               <img src={loginimage} alt="" />

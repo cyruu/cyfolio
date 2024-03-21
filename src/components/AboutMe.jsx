@@ -9,6 +9,16 @@ import redux from "../images/redux.png";
 import tailwind from "../images/tailwind.png";
 import css from "../images/css.png";
 function AboutMe() {
+  // In your React component
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      const element = document.querySelector(hash);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, []);
   useEffect(() => {
     const aboutme = document.getElementById("aboutme");
     //observer for about me text

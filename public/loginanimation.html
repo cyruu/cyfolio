@@ -19,6 +19,29 @@
     <title>Login animation</title>
   </head>
   <body>
+    <nav class="blognav">
+      <a href="/#home" className="">
+        <span className="logo">Cyfolio</span>
+      </a>
+      <button id="burgericon" className="burger">
+        <i className="ri-menu-line text-2xl burgerremixicon"></i>
+      </button>
+      <div className="links">
+        <span id="activeline"></span>
+        <a id="0" href="/#home" onClick="{slideActiveLine}">
+          Home <span className="line"></span>
+        </a>
+        <a id="1" href="/#aboutme" onClick="{slideActiveLine}">
+          About Me <span className="line"></span>
+        </a>
+        <a href="/#projects" id="2" onClick="{slideActiveLine}">
+          Projects <span className="line"></span>
+        </a>
+        <a href="/#blog" id="3" onClick="{slideActiveLine}">
+          My Blog <span className="line"></span>
+        </a>
+      </div>
+    </nav>
     <div class="blogcontainer">
       <p class="blogtitle">
         How to create login animation using HTML, CSS, JS.

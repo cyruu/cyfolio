@@ -4,6 +4,16 @@ import tictac from "../images/tictac.png";
 import todo from "../images/todo.png";
 import chat from "../images/chat.png";
 function Projects() {
+  // In your React component
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      const element = document.querySelector(hash);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, []);
   useEffect(() => {
     const projectSection = document.getElementById("projects");
     const projecttitle = document.getElementById("projecttitle");
