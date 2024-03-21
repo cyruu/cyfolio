@@ -6,7 +6,7 @@
 .burgerremixicon {
   color: white;
   padding: 10px;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .burgermenu {
   height: 90vh;
@@ -19,6 +19,10 @@
   transform: translate(450px, 10vh);
   display: none;
   transition: all 0.4s ease-out;
+  overflow: hidden;
+}
+.noscroll {
+  overflow-y: hidden;
 }
 .burgerlinks {
   width: 100%;
@@ -80,19 +84,19 @@
   }
 }
 /* samsung */
-@media only screen and (350px < width < 409px) {
-  .show {
-    transform: translate(63px, 10vh);
+@media only screen and (350px < width < 390px) {
+  .blogshow {
+    transform: translate(75px, 10vh);
   }
 }
-@media only screen and (409px < width < 419px) {
-  .show {
-    transform: translate(73px, 10vh);
+@media only screen and (390px < width < 419px) {
+  .blogshow {
+    transform: translate(85px, 10vh);
   }
 }
 /* iphone 14 */
 @media only screen and (421px < width < 431px) {
-  .show {
-    transform: translate(83px, 10vh);
+  .blogshow {
+    transform: translate(90px, 10vh);
   }
 }
