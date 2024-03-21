@@ -11,34 +11,43 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- remix -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+      integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/nord.min.css"
     />
     <link rel="stylesheet" href="./localblog.css" />
+    <link rel="stylesheet" href="./burger.css" />
     <title>Login animation</title>
   </head>
   <body>
     <nav class="blognav">
-      <a href="/#home" className="">
-        <span className="logo">Cyfolio</span>
+      <a href="/#home" class="">
+        <span class="logo">Cyfolio</span>
       </a>
-      <button id="burgericon" className="burger">
-        <i className="ri-menu-line text-2xl burgerremixicon"></i>
+      <button id="burgericon" class="burger">
+        <i class="ri-menu-line text-2xl burgerremixicon"></i>
       </button>
-      <div className="links">
+      <div class="links">
         <span id="activeline"></span>
         <a id="0" href="/#home" onClick="{slideActiveLine}">
-          Home <span className="line"></span>
+          Home <span class="blogline"></span>
         </a>
         <a id="1" href="/#aboutme" onClick="{slideActiveLine}">
-          About Me <span className="line"></span>
+          About Me <span class="blogline"></span>
         </a>
         <a href="/#projects" id="2" onClick="{slideActiveLine}">
-          Projects <span className="line"></span>
+          Projects <span class="blogline"></span>
         </a>
         <a href="/#blog" id="3" onClick="{slideActiveLine}">
-          My Blog <span className="line"></span>
+          My Blog <span class="blogline"></span>
         </a>
       </div>
     </nav>
