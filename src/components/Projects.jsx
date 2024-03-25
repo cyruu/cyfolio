@@ -70,10 +70,7 @@ function Projects() {
     <section id="projects" className="">
       <div className="projectcont flex  mx-auto justify-center  flex-col items-center ">
         {/* first */}
-        <p
-          id="projecttitle"
-          className="text-4xl font-bold text-gray-600 my-4 pt-5"
-        >
+        <p id="projecttitle" className="text-4xl font-bold text-gray-600 my-4 ">
           Projects
         </p>
         {/* second */}
