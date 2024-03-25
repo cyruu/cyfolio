@@ -204,6 +204,7 @@ function Navbar() {
     } else if (navLinkId == "3" || navLinkId == "b3") {
       scrollPixel = blogsectionTopPixel;
     }
+
     window.scrollTo({
       top: scrollPixel,
       behavior: "smooth",

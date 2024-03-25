@@ -68,10 +68,7 @@ function Blog() {
         className="flex  mx-auto justify-center  flex-col items-center"
       >
         {/* first */}
-        <p
-          id="blogtitle"
-          className=" text-4xl font-bold my-6 text-gray-600 mb-8"
-        >
+        <p id="blogtitle" className=" text-4xl font-bold my-6 text-gray-600 ">
           Blog
         </p>
       </div>
