@@ -207,13 +207,13 @@ function Navbar() {
     let scrollPixel = 0;
     let navLinkId = e.target.id;
 
-    if (navLinkId == "0" || navLinkId == "b0") {
+    if (navLinkId == "0") {
       scrollPixel = homesectionTopPixel;
-    } else if (navLinkId == "1" || navLinkId == "b1") {
+    } else if (navLinkId == "1") {
       scrollPixel = aboutmesectionTopPixel;
-    } else if (navLinkId == "2" || navLinkId == "b2") {
+    } else if (navLinkId == "2") {
       scrollPixel = projectssectionTopPixel;
-    } else if (navLinkId == "3" || navLinkId == "b3") {
+    } else if (navLinkId == "3") {
       scrollPixel = blogsectionTopPixel;
     }
 
