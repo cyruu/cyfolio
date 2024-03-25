@@ -99,11 +99,11 @@ function Navbar() {
       const burgerIcon = document.getElementById("burgericon");
       const burgerMenu = document.querySelector(".burgermenu");
 
-      burgerIcon.addEventListener("click", () => {
+      function showBurgerMenu() {
         burgerMenu.classList.toggle("show");
         document.body.classList.toggle("noscroll");
-        // burgerIcon.classList.toggle("colorwhite");
-      });
+      }
+      burgerIcon.addEventListener("click", showBurgerMenu);
       // burgerIcon.addEventListener("blur", () => {
       //   document.body.classList.remove("noscroll");
       //   burgerMenu.classList.remove("show");
@@ -132,8 +132,15 @@ function Navbar() {
           removeBurgerMenu();
         });
       });
+      return () => {
+        burgerIcon.removeEventListener("click", showBurgerMenu);
+        // home.removeEventListener("click");
+        // aboutme.removeEventListener("click");
+        // projects.removeEventListener("click");
+        // blog.removeEventListener("click");
+      };
     }
-  }, []);
+  }, [pathname]);
   // for path /blog/blogid
 
   useEffect(() => {
@@ -146,20 +153,19 @@ function Navbar() {
     ) {
       const burgerIcon = document.getElementById("burgericon");
       const burgerMenu = document.querySelector(".burgermenu");
-      if (!cameFromSinglePage) {
-        burgerIcon.addEventListener("click", () => {
-          burgerMenu.classList.toggle("show");
-          document.body.classList.toggle("noscroll");
-          // burgerIcon.classList.toggle("colorwhite");
-        });
-        // harek menu lai thickda ni burgermenu hatna paryo
-        const burgerLinks = document.querySelectorAll(".burgerlink");
-        burgerLinks.forEach((burgerLink) => {
-          burgerLink.addEventListener("click", () => {
-            removeBurgerMenu();
-          });
-        });
+      function showBurgerMenu() {
+        burgerMenu.classList.toggle("show");
+        document.body.classList.toggle("noscroll");
       }
+      burgerIcon.addEventListener("click", showBurgerMenu);
+
+      // harek menu lai thickda ni burgermenu hatna paryo
+      const burgerLinks = document.querySelectorAll(".burgerlink");
+      burgerLinks.forEach((burgerLink) => {
+        burgerLink.addEventListener("click", () => {
+          removeBurgerMenu();
+        });
+      });
 
       const singleBlogContainer = document.getElementById(
         "singleBlogContainer"
@@ -173,7 +179,13 @@ function Navbar() {
       singleBlogContainer.addEventListener("click", () => {
         removeBurgerMenu();
       });
-
+      return () => {
+        burgerIcon.removeEventListener("click", showBurgerMenu);
+        // home.removeEventListener("click");
+        // aboutme.removeEventListener("click");
+        // projects.removeEventListener("click");
+        // blog.removeEventListener("click");
+      };
       // harek menu lai thickda ni burgermenu hatna paryo
     }
   }, [pathname]);
