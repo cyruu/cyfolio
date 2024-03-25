@@ -196,19 +196,18 @@ function Navbar() {
     let navLinkId = e.target.id;
 
     if (navLinkId == "0" || navLinkId == "b0") {
-      scrollPixel = homesectionTopPixel;
+      scrollPixel = homesectionTopPixel + 100;
     } else if (navLinkId == "1" || navLinkId == "b1") {
-      scrollPixel = aboutmesectionTopPixel;
+      scrollPixel = aboutmesectionTopPixel + 100;
     } else if (navLinkId == "2" || navLinkId == "b2") {
-      scrollPixel = projectssectionTopPixel;
+      scrollPixel = projectssectionTopPixel + 100;
     } else if (navLinkId == "3" || navLinkId == "b3") {
-      scrollPixel = blogsectionTopPixel;
+      scrollPixel = blogsectionTopPixel + 100;
     }
 
-    window.scrollTo({
-      top: scrollPixel,
-      behavior: "smooth",
-    });
+    // window.scrollTo({
+    //   top: scrollPixel,
+    // });
   };
   return (
     <>

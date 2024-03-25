@@ -12,13 +12,13 @@ function SinglePageComponent() {
 
   useEffect(() => {
     const homeSection =
-      document.getElementById("home").getBoundingClientRect().top - 0;
+      document.getElementById("home").getBoundingClientRect().top - 75;
     const projectsSection =
-      document.getElementById("projects").getBoundingClientRect().top - 0;
+      document.getElementById("projects").getBoundingClientRect().top - 75;
     const aboutmeSection =
-      document.getElementById("aboutme").getBoundingClientRect().top - 0;
+      document.getElementById("aboutme").getBoundingClientRect().top - 75;
     const blogSection =
-      document.getElementById("blog").getBoundingClientRect().top - 0;
+      document.getElementById("blog").getBoundingClientRect().top - 75;
     setHomeSectionTopPixel(homeSection);
     setAboutmeSectionTopPixel(aboutmeSection);
     setProjectsSectionTopPixel(projectsSection);
