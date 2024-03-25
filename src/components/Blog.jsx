@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import "../css/blog.css";
 import loginimage from "../images/login.png";
+import { blogs } from "./index";
+import { Link } from "react-router-dom";
 function Blog() {
   // In your React component
   useEffect(() => {
@@ -77,29 +79,29 @@ function Blog() {
       <div className="blogitems">
         {/* first blog */}
         <div id="firstblog">
-          {/* blog1 */}
-          <a
-            href="/loginanimation.html"
-            rel="noopener noreferrer"
-            className="blogitem"
-          >
-            <div className="blogimage">
-              <img src={loginimage} alt="" />
-            </div>
-            <div className="blogdesc">
-              <p className="blogname">
-                How to create login animation using HTML, CSS, JS.
-              </p>
+          {blogs.map((blog) => {
+            return (
+              <Link
+                to={`/blog/${blog.id}`}
+                rel="noopener noreferrer"
+                className="blogitem"
+                key={blog.id}
+              >
+                <div className="blogimage">
+                  <img src={loginimage} alt="" />
+                </div>
+                <div className="blogdesc">
+                  <p className="blogname">{blog.title}</p>
 
-              <p className="blogdate">20 March, 2024</p>
-              <div className="blogsmall">
-                Learn to use simple js along with HTML and CSS. Create login
-                form animation.
-              </div>
-              <span className="blogbutton">View</span>
-            </div>
-          </a>
+                  <p className="blogdate">{blog.date}</p>
+                  <div className="blogsmall">{blog.displayIntro}</div>
+                  <span className="blogbutton">View</span>
+                </div>
+              </Link>
+            );
+          })}
         </div>
+
         {/* second blog */}
         <div id="secondblog">{/* blog1 */}</div>
       </div>

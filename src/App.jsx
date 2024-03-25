@@ -1,20 +1,19 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
-import Home from "./components/Home";
-import AboutMe from "./components/AboutMe";
-import Projects from "./components/Projects";
-import Blog from "./components/Blog";
+import { SinglePageComponent, SingleBlog } from "./components/index";
 import "./css/burger.css";
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <>
-      <Navbar />
-
-      <Home />
-      <AboutMe />
-      <Projects />
-      <Blog />
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" exact element={<SinglePageComponent />} />
+          <Route path="/:page" element={<SinglePageComponent />} />
+          <Route path="/blog/:blogId" element={<SingleBlog />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
