@@ -27,9 +27,9 @@ body {
 .navbar {
   transition: all 0.2s ease-out;
   z-index: 1;
-  position: sticky;
-  top: 0;
-  color: black;
+  position: fixed;
+  top: 0px;
+  color: rgb(0, 0, 0);
   /* overflow-x: hidden; */
   background-color: white;
   /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.082); */
@@ -175,7 +175,7 @@ body {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-
+  margin-top: 10vh;
   /* background-color: blue; */
 }
 #aboutme {

@@ -6,6 +6,7 @@ html {
   width: 100vw;
   /* background-color: red; */
   padding: 50px 0;
+  margin-top: 10vh;
 }
 .blogContainer {
   width: 70%;
@@ -60,7 +61,7 @@ html {
   border: 1px solid white;
   position: absolute;
   border-radius: 10px;
-  transform: translate(700px, 70px);
+  transform: translate(600px, 70px);
   /* top: 250%;
   right: 32%; */
 }
@@ -81,16 +82,11 @@ html {
   font-size: 1.1rem;
   pointer-events: none;
 }
-@media only screen and (1200px < width <1300px) {
+
+@media only screen and (1200px < width < 1300px) {
   #copyhtml,
   #copycss {
-    transform: translate(570px, 80px);
-  }
-}
-@media only screen and (1300px < width <1400px) {
-  #copyhtml,
-  #copycss {
-    transform: translate(620px, 80px);
+    transform: translate(480px, 70px);
   }
 }
 @media only screen and (max-width: 431px) {
