@@ -21,7 +21,7 @@ html {
   margin-inline: auto;
   font-weight: bold;
 }
-.blogdate {
+.singleblogdate {
   display: flex;
   justify-content: center;
   color: gray;

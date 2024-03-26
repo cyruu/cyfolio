@@ -88,7 +88,7 @@ function SingleBlog() {
     <div id="singleBlogContainer">
       <div className="blogContainer">
         <p className="blogtitle">{singleBlogObject.title}</p>
-        <p className="blogdate">
+        <p className="singleblogdate">
           {singleBlogObject.date} &nbsp; -Cyrus Maharjan
         </p>
         <p className="introduction">{singleBlogObject.firstIntroduction}</p>
