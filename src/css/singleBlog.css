@@ -1,8 +1,11 @@
+html {
+  overflow-x: hidden;
+}
 #singleBlogContainer {
   min-height: 90vh;
   width: 100vw;
   /* background-color: red; */
-  padding: 30px 0;
+  padding: 50px 0;
 }
 .blogContainer {
   width: 70%;
@@ -13,7 +16,8 @@
   width: 85%;
   text-align: center;
   font-size: 1.9rem;
-  margin: 20px auto 0px;
+  /* margin: 20px auto; */
+  margin-inline: auto;
   font-weight: bold;
 }
 .blogdate {
@@ -32,7 +36,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 40px 0;
+  margin: 40px 0px 0px;
 }
 .indexhtml,
 .stylecss {
@@ -47,6 +51,9 @@
   padding: 10px;
   font-size: 1.7rem;
   color: white;
+}
+.codeSection {
+  width: 100%;
 }
 #copyhtml,
 #copycss {
@@ -80,12 +87,36 @@
     transform: translate(570px, 80px);
   }
 }
+@media only screen and (1300px < width <1400px) {
+  #copyhtml,
+  #copycss {
+    transform: translate(620px, 80px);
+  }
+}
 @media only screen and (max-width: 431px) {
   #singleBlogContainer {
     width: 100vw;
   }
+  .fa-copy {
+    padding: 10px;
+    font-size: 0.5rem;
+  }
+  #copyhtml,
+  #copycss {
+    border: 1px solid white;
+    position: absolute;
+    border-radius: 8px;
+    transform: translate(-10px, 55px);
+    /* top: 250%;
+  right: 32%; */
+  }
+  .codeSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
   .blogContainer {
-    width: 90%;
+    width: 100%;
     /* background-color: blue; */
     margin: auto;
   }
@@ -99,24 +130,20 @@
     justify-content: center;
     color: gray;
 
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   .introduction {
-    font-size: 0.78rem;
-    margin: 0px auto;
+    font-size: 0.8rem;
+    margin: 20px auto 0px;
   }
   .ytvideo iframe {
     width: 90%;
     height: 230px;
   }
-  .codes {
-    padding: 0px 20px;
-    overflow-x: hidden;
-  }
-  code {
-    width: 90%;
-    font-size: 0.65rem;
-    max-height: 400px;
+  .indexhtml,
+  .stylecss {
+    font-size: 0.8rem;
+    margin: 15px 25px;
   }
   #copycss,
   #copyhtml {

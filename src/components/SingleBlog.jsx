@@ -108,14 +108,20 @@ function SingleBlog() {
             <p id="htmlcopied">copied</p>
           </button>
         </p>
-        <SyntaxHighlighter
-          language="javascript"
-          style={atomOneDark}
-          id="codeBlockHtml"
-          customStyle={{ width: "90%", maxHeight: "500px", fontSize: ".8rem" }}
-        >
-          {singleBlogObject.indexHtml}
-        </SyntaxHighlighter>
+        <div className="codeSection">
+          <SyntaxHighlighter
+            language="javascript"
+            style={atomOneDark}
+            id="codeBlockHtml"
+            customStyle={{
+              width: "80%",
+              maxHeight: "500px",
+              fontSize: ".7rem",
+            }}
+          >
+            {singleBlogObject.indexHtml}
+          </SyntaxHighlighter>
+        </div>
         {/* css */}
         <p className="stylecss">
           Code for <span className="bold">style.css</span>
@@ -125,14 +131,20 @@ function SingleBlog() {
             <p id="csscopied">copied</p>
           </button>
         </p>
-        <SyntaxHighlighter
-          language="css"
-          style={atomOneDark}
-          customStyle={{ width: "90%", maxHeight: "500px", fontSize: ".8rem" }}
-          id="codeBlockCss"
-        >
-          {singleBlogObject.css}
-        </SyntaxHighlighter>
+        <div className="codeSection">
+          <SyntaxHighlighter
+            language="css"
+            style={atomOneDark}
+            customStyle={{
+              width: "80%",
+              maxHeight: "500px",
+              fontSize: ".7rem",
+            }}
+            id="codeBlockCss"
+          >
+            {singleBlogObject.css}
+          </SyntaxHighlighter>
+        </div>
       </div>
     </div>
   );
