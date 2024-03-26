@@ -4,13 +4,16 @@ import { useParams } from "react-router";
 import { Home, AboutMe, Projects, Blog } from "../index";
 function SinglePageComponent() {
   let { page } = useParams();
-
   const [homesectionTopPixel, setHomeSectionTopPixel] = useState(0);
   const [aboutmesectionTopPixel, setAboutmeSectionTopPixel] = useState(0);
   const [projectssectionTopPixel, setProjectsSectionTopPixel] = useState(0);
   const [blogsectionTopPixel, setBlogSectionTopPixel] = useState(0);
 
   useEffect(() => {
+    const blogline = document.getElementById("blogline");
+    blogline.style.display = "none";
+    const activeLine = document.getElementById("activeline");
+    activeLine.style.display = "block";
     const homeSection =
       document.getElementById("home").getBoundingClientRect().top - 75;
     const projectsSection =

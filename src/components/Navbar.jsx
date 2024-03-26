@@ -309,6 +309,7 @@ function Navbar() {
           </Link>
           <Link to="/blog" id="3" onClick={navLinkClick}>
             My Blog <span className="line"></span>
+            <span id="blogline"></span>
           </Link>
         </div>
       </nav>
