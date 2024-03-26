@@ -63,6 +63,8 @@
   font-weight: bold;
 }
 .blogdate {
+  display: flex;
+  justify-content: flex-start;
   font-size: 0.7rem;
   color: gray;
 }

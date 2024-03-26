@@ -17,7 +17,8 @@
   font-weight: bold;
 }
 .blogdate {
-  text-align: center;
+  display: flex;
+  justify-content: center;
   color: gray;
   font-size: 0.9rem;
 }
@@ -52,8 +53,9 @@
   border: 1px solid white;
   position: absolute;
   border-radius: 10px;
-  top: 250%;
-  right: 32%;
+  transform: translate(700px, 70px);
+  /* top: 250%;
+  right: 32%; */
 }
 #csscopied,
 #htmlcopied {
@@ -71,4 +73,64 @@
   padding: 10px;
   font-size: 1.1rem;
   pointer-events: none;
+}
+@media only screen and (1200px < width <1300px) {
+  #copyhtml,
+  #copycss {
+    transform: translate(570px, 80px);
+  }
+}
+@media only screen and (max-width: 431px) {
+  #singleBlogContainer {
+    width: 100vw;
+  }
+  .blogContainer {
+    width: 90%;
+    /* background-color: blue; */
+    margin: auto;
+  }
+
+  .blogtitle {
+    font-size: 1.3rem;
+  }
+
+  .blogdate {
+    display: flex;
+    justify-content: center;
+    color: gray;
+
+    font-size: 0.8rem;
+  }
+  .introduction {
+    font-size: 0.78rem;
+    margin: 0px auto;
+  }
+  .ytvideo iframe {
+    width: 90%;
+    height: 230px;
+  }
+  .codes {
+    padding: 0px 20px;
+    overflow-x: hidden;
+  }
+  code {
+    width: 90%;
+    font-size: 0.65rem;
+    max-height: 400px;
+  }
+  #copycss,
+  #copyhtml {
+    top: 13%;
+    right: 10%;
+  }
+  .fa-copy {
+    font-size: 0.9rem;
+  }
+  .links {
+    display: none;
+  }
+  .logo {
+    font-size: 1.7rem;
+    margin: 0px 0px 0px 35px;
+  }
 }

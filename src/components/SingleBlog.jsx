@@ -14,30 +14,35 @@ function SingleBlog() {
     const blogline = document.getElementById("blogline");
     blogline.style.display = "block";
     const activeLine = document.getElementById("activeline");
-    activeLine.style.display = "block";
+    activeLine.style.display = "none";
     const navbar = document.getElementById("navbar");
     const lines = document.querySelectorAll(".line");
     const activeline = document.getElementById("activeline");
     activeline.style.transform = "translateX(390px)";
     window.addEventListener("scroll", () => {
       let currentScrollPoint = window.scrollY;
-      if (currentScrollPoint > 150) {
-        // change navbar color
-        navbar.style.backgroundColor = "rgb(45,45,45)";
-        navbar.style.color = "white";
-        activeline.style.backgroundColor = "white";
-        lines.forEach((line) => {
-          line.style.backgroundColor = "white";
-        });
-        blogline.style.backgroundColor = "white";
-      } else {
-        navbar.style.backgroundColor = "white";
-        navbar.style.color = "black";
-        lines.forEach((line) => {
-          line.style.backgroundColor = "black";
-        });
-        activeline.style.backgroundColor = "black";
-        blogline.style.backgroundColor = "black";
+      let screenWidth = window.innerWidth;
+      if (screenWidth > 431) {
+        if (currentScrollPoint > 100) {
+          // change navbar color
+          navbar.style.backgroundColor = "rgb(45,45,45)";
+          navbar.style.color = "white";
+          activeline.style.backgroundColor = "white";
+          lines.forEach((line) => {
+            line.style.backgroundColor = "white";
+          });
+          blogline.style.backgroundColor = "white";
+          navbar.style.boxShadow = "3px 3px 3px rgba(0,0,0,0.2)";
+        } else {
+          navbar.style.backgroundColor = "white";
+          navbar.style.boxShadow = "none";
+          navbar.style.color = "black";
+          lines.forEach((line) => {
+            line.style.backgroundColor = "black";
+          });
+          activeline.style.backgroundColor = "black";
+          blogline.style.backgroundColor = "black";
+        }
       }
     });
     const blog = blogs.filter((blog) => blog.id == blogId);
@@ -106,8 +111,8 @@ function SingleBlog() {
         <SyntaxHighlighter
           language="javascript"
           style={atomOneDark}
-          customStyle={{ width: "75%", maxHeight: "700px", fontSize: ".9rem" }}
           id="codeBlockHtml"
+          customStyle={{ width: "90%", maxHeight: "500px", fontSize: ".8rem" }}
         >
           {singleBlogObject.indexHtml}
         </SyntaxHighlighter>
@@ -123,7 +128,7 @@ function SingleBlog() {
         <SyntaxHighlighter
           language="css"
           style={atomOneDark}
-          customStyle={{ width: "75%", maxHeight: "700px", fontSize: ".9rem" }}
+          customStyle={{ width: "90%", maxHeight: "500px", fontSize: ".8rem" }}
           id="codeBlockCss"
         >
           {singleBlogObject.css}
