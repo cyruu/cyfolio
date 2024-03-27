@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "../css/blog.css";
-import loginimage from "../images/login.png";
+
 import { blogs } from "./index";
 import { Link } from "react-router-dom";
 function Blog() {
@@ -85,7 +85,7 @@ function Blog() {
                 key={blog.id}
               >
                 <div className="blogimage">
-                  <img src={loginimage} alt="" />
+                  <img src={blog.thumbnail} alt="" />
                 </div>
                 <div className="blogdesc">
                   <p className="blogname">{blog.title}</p>

@@ -39,8 +39,13 @@ html {
   align-items: center;
   margin: 40px 0px 0px;
 }
+.thumbnail {
+  width: 50%;
+  margin: 1.5rem auto;
+}
 .indexhtml,
-.stylecss {
+.stylecss,
+.scriptjs {
   font-size: 0.9rem;
   margin: 1rem 0 1.5rem;
   position: relative;
@@ -57,7 +62,8 @@ html {
   width: 100%;
 }
 #copyhtml,
-#copycss {
+#copycss,
+#copyjs {
   border: 1px solid white;
   position: absolute;
   border-radius: 10px;
@@ -66,7 +72,8 @@ html {
   right: 32%; */
 }
 #csscopied,
-#htmlcopied {
+#htmlcopied,
+#jscopied {
   bottom: -30px;
   left: -5px;
   position: absolute;
@@ -82,10 +89,13 @@ html {
   font-size: 1.1rem;
   pointer-events: none;
 }
-
+.displaynone {
+  display: none;
+}
 @media only screen and (1200px < width < 1300px) {
   #copyhtml,
-  #copycss {
+  #copycss,
+  #copyjs {
     transform: translate(480px, 70px);
   }
 }
@@ -97,8 +107,13 @@ html {
     padding: 10px;
     font-size: 0.5rem;
   }
+  .thumbnail {
+    width: 80%;
+    margin: 1rem auto;
+  }
   #copyhtml,
-  #copycss {
+  #copycss,
+  #copyjs {
     border: 1px solid white;
     position: absolute;
     border-radius: 8px;
@@ -137,12 +152,14 @@ html {
     height: 230px;
   }
   .indexhtml,
-  .stylecss {
+  .stylecss,
+  .scriptjs {
     font-size: 0.8rem;
     margin: 15px 25px;
   }
   #copycss,
-  #copyhtml {
+  #copyhtml,
+  #copyjs {
     top: 13%;
     right: 10%;
   }
