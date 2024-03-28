@@ -50,12 +50,14 @@ function SingleBlog() {
         lines.forEach((line) => {
           line.style.backgroundColor = "black";
         });
-        activeline.style.backgroundColor = "black";
+        activeLine.style.backgroundColor = "black";
         blogline.style.backgroundColor = "black";
       }
     }
   }
-
+  function initialScrollToTop() {
+    window.scrollTo(0, 0);
+  }
   useEffect(() => {
     //navbar scroll
     const blogline = document.getElementById("blogline");
@@ -66,6 +68,7 @@ function SingleBlog() {
     const activeline = document.getElementById("activeline");
     activeline.style.transform = "translateX(390px)";
     window.addEventListener("scroll", navScrollAnimation);
+    initialScrollToTop();
     // window.addEventListener("scroll", () => {
     //   let currentScrollPoint = window.scrollY;
     //   let screenWidth = window.innerWidth;
@@ -122,6 +125,7 @@ function SingleBlog() {
       copyhtml.removeEventListener("click", copyToClipboard(codeBlockHtml));
       copycss.removeEventListener("click", copyToClipboard(codeBlocCss));
       copyjs.removeEventListener("click", copyToClipboard(codeBlockJs));
+      window.removeEventListener("scroll", navScrollAnimation);
     };
   }, [pathname]);
 

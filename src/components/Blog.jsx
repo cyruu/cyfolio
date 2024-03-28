@@ -4,16 +4,6 @@ import "../css/blog.css";
 import { blogs } from "./index";
 import { Link } from "react-router-dom";
 function Blog() {
-  // In your React component
-  useEffect(() => {
-    const hash = window.location.hash;
-    if (hash) {
-      const element = document.querySelector(hash);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-  }, []);
   useEffect(() => {
     const blogSection = document.getElementById("blog");
     const blogTitle = document.getElementById("blogtitle");
