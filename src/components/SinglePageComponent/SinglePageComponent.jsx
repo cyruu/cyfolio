@@ -8,7 +8,7 @@ function SinglePageComponent() {
   const [aboutmesectionTopPixel, setAboutmeSectionTopPixel] = useState(0);
   const [projectssectionTopPixel, setProjectsSectionTopPixel] = useState(0);
   const [blogsectionTopPixel, setBlogSectionTopPixel] = useState(0);
-
+  // animation bug
   useEffect(() => {
     const blogline = document.getElementById("blogline");
     blogline.style.display = "none";
