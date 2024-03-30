@@ -2,7 +2,7 @@ import loginimage from "../images/login.png";
 import navbar from "../images/navbar.png";
 import navthumbog from "../images/navthumbog.jpg";
 export const blogs = [
-  // blog1
+  // blog1 login animation
   {
     id: "login-animation",
     title: "How to create login animation using HTML, CSS, JS.",
@@ -197,12 +197,13 @@ export const blogs = [
 `,
     js: "",
   },
-  // blog2
+  // blog2 navbar animation
   {
     id: "navbar-animation",
     title: "Navbar animation on scroll and active slider using HTML, CSS, JS.",
     date: "27 March, 2024",
     thumbnail: navbar,
+    ytLink: "https://www.youtube.com/embed/SdQUxwlpKGA?si=lItYbKPSK64Eawy5",
     displayIntro:
       "Changing navbar background on scroll. Also active bar slider according to current page.",
     firstIntroduction: `Learn to create a navbar with custom animation on scroll event. We will be using HTML, CSS and simple JavaScript to create this project.
