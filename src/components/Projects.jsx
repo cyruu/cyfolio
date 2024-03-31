@@ -147,6 +147,29 @@ function Projects() {
           </a>
 
           {/* proj 4 */}
+          <a
+            href="https://react-cart-system.vercel.app/"
+            target="_blank"
+            className="project"
+          >
+            <div className="dark">
+              <button className="demo">View Demo</button>
+            </div>
+            <div className="projimage">
+              <img src={chat} alt="" />
+            </div>
+            <div className="projdesc">
+              <div className="projtitle">Cart Demo</div>
+              <div className="tools">
+                <div className="tool">React</div>
+                <div className="tool">Tailwind</div>
+                <div className="tool">Redux</div>
+                <div className="tool">HTML</div>
+                <div className="tool">CSS</div>
+              </div>
+            </div>
+          </a>
+          {/* proj 5 */}
         </div>
         {/* third */}
         <div id="secondproject" className="">
