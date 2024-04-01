@@ -1,8 +1,7 @@
 import React, { useEffect } from "react";
 import "../css/projects.css";
-import tictac from "../images/tictac.png";
-import todo from "../images/todo.png";
-import chat from "../images/chat.png";
+import { projects } from "../projects/projects";
+
 function Projects() {
   // In your React component
   useEffect(() => {
@@ -69,109 +68,45 @@ function Projects() {
   return (
     <section id="projects" className="">
       <div className="projectcont flex  mx-auto justify-center  flex-col items-center ">
-        {/* first */}
+        {/* first animation*/}
         <p id="projecttitle" className="text-4xl font-bold text-gray-600 my-6 ">
           Projects
         </p>
-        {/* second */}
+        {/* second animation*/}
         {/* first project */}
         <div id="firstproject" className="">
-          {/* proj 1 */}
-          <a
-            href="https://tictactoetest.vercel.app/"
-            target="_blank"
-            className="project"
-          >
-            <div className="dark">
-              <button className="demo">View Demo</button>
-            </div>
-            <div className="projimage">
-              <img src={tictac} alt="" />
-            </div>
-            <div className="projdesc">
-              <div className="projtitle">TicTacToe</div>
-              <div className="tools">
-                <div className="tool">Tailwind</div>
-
-                <div className="tool">React</div>
-                <div className="tool">HTML</div>
-                <div className="tool">CSS</div>
-              </div>
-            </div>
-          </a>
-          {/* proj 2 */}
-          <a
-            href="https://cyruu.github.io/react_TodoApplication/"
-            target="_blank"
-            className="project"
-          >
-            <div className="dark">
-              <button className="demo">View Demo</button>
-            </div>
-            <div className="projimage">
-              <img src={todo} alt="" />
-            </div>
-            <div className="projdesc">
-              <div className="projtitle">Todo App</div>
-              <div className="tools">
-                <div className="tool">React</div>
-                <div className="tool">Tailwind</div>
-                <div className="tool">HTML</div>
-                <div className="tool">CSS</div>
-              </div>
-            </div>
-          </a>
-
-          {/* proj 3 */}
-          <a
-            href="https://react-chat-app-wlkh.vercel.app/"
-            target="_blank"
-            className="project"
-          >
-            <div className="dark">
-              <button className="demo">View Demo</button>
-            </div>
-            <div className="projimage">
-              <img src={chat} alt="" />
-            </div>
-            <div className="projdesc">
-              <div className="projtitle">Chat App</div>
-              <div className="tools">
-                <div className="tool">React</div>
-                <div className="tool">Tailwind</div>
-                <div className="tool">Redux</div>
-                <div className="tool">HTML</div>
-                <div className="tool">CSS</div>
-              </div>
-            </div>
-          </a>
-
-          {/* proj 4 */}
-          <a
-            href="https://react-cart-system.vercel.app/"
-            target="_blank"
-            className="project"
-          >
-            <div className="dark">
-              <button className="demo">View Demo</button>
-            </div>
-            <div className="projimage">
-              <img src={chat} alt="" />
-            </div>
-            <div className="projdesc">
-              <div className="projtitle">Cart Demo</div>
-              <div className="tools">
-                <div className="tool">React</div>
-                <div className="tool">Tailwind</div>
-                <div className="tool">Redux</div>
-                <div className="tool">HTML</div>
-                <div className="tool">CSS</div>
-              </div>
-            </div>
-          </a>
-          {/* proj 5 */}
+          {projects.map((project) => {
+            return (
+              <a
+                href={project.link}
+                target="_blank"
+                className="project"
+                key={project.id}
+              >
+                <div className="dark">
+                  <button className="demo">View Demo</button>
+                </div>
+                <div className="projimage">
+                  <img src={project.image} alt="" />
+                </div>
+                <div className="projdesc">
+                  <div className="projtitle">{project.title}</div>
+                  <div className="tools">
+                    {project.tools.map((tool, i) => {
+                      return (
+                        <div className="tool" key={i}>
+                          {tool}
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              </a>
+            );
+          })}
         </div>
-        {/* third */}
+        {/* third animation */}
+        {/* second project */}
         <div id="secondproject" className="">
           {/* proj 1 */}
         </div>
