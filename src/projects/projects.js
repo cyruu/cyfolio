@@ -2,6 +2,7 @@ import tictac from "../images/tictac.png";
 import todo from "../images/todo.png";
 import chat from "../images/chat.png";
 import cart from "../images/cart.png";
+import tieSheet from "../images/tiesheet.png";
 export const projects = [
   // project 1 => tictactoe
   {
@@ -34,5 +35,13 @@ export const projects = [
     image: chat,
     link: "https://react-chat-app-wlkh.vercel.app/",
     tools: ["React", "Tailwind", "Redux", "HTML", "CSS"],
+  },
+  //project 5=> tiesheet
+  {
+    id: "tieSheet",
+    title: "Tie-Sheet",
+    image: tieSheet,
+    link: "https://react-chat-app-wlkh.vercel.app/",
+    tools: ["React", "Redux", "HTML", "CSS"],
   },
 ];
