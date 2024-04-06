@@ -41,7 +41,7 @@ export const projects = [
     id: "tieSheet",
     title: "Tie-Sheet",
     image: tieSheet,
-    link: "https://react-chat-app-wlkh.vercel.app/",
+    link: "https://react-tie-sheet.vercel.app/",
     tools: ["React", "Redux", "HTML", "CSS"],
   },
 ];
