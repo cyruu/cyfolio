@@ -36,7 +36,7 @@ export const projects = [
     link: "https://react-chat-app-wlkh.vercel.app/",
     tools: ["React", "Tailwind", "Redux", "HTML", "CSS"],
   },
-  //project 5=> tiesheet
+  //project 5=> tiesheet for 4 and 8 players
   {
     id: "tieSheet",
     title: "Tie-Sheet",
