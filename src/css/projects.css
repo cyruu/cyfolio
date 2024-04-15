@@ -152,14 +152,16 @@
   #secondproject {
     display: flex;
     flex-wrap: wrap;
+
     width: 100%;
+    margin: 0 30px 0 0;
   }
   #secondproject {
     margin-top: 0px;
   }
   .project {
     height: 215px;
-    width: 160px;
+    width: 180px;
     margin: 0px 0px 20px 35px;
   }
   #title {
