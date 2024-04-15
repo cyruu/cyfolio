@@ -101,7 +101,11 @@ function Navbar() {
 
       function showBurgerMenu() {
         burgerMenu.classList.toggle("show");
-        document.body.classList.toggle("noscroll");
+        if (burgerMenu.classList.contains("show")) {
+          document.documentElement.style.overflow = "hidden";
+        } else {
+          document.documentElement.style.overflow = "auto";
+        }
       }
       burgerIcon.addEventListener("click", showBurgerMenu);
       // burgerIcon.addEventListener("blur", () => {
@@ -109,7 +113,7 @@ function Navbar() {
       //   burgerMenu.classList.remove("show");
       // });
       function removeBurgerMenu() {
-        document.body.classList.remove("noscroll");
+        document.documentElement.style.overflow = "auto";
         burgerMenu.classList.remove("show");
       }
       // on blur hatayera particular section lai click garda burgermenu hatne
@@ -134,10 +138,10 @@ function Navbar() {
       });
       return () => {
         burgerIcon.removeEventListener("click", showBurgerMenu);
-        // home.removeEventListener("click");
-        // aboutme.removeEventListener("click");
-        // projects.removeEventListener("click");
-        // blog.removeEventListener("click");
+        home.removeEventListener("click", removeBurgerMenu);
+        aboutme.removeEventListener("click", removeBurgerMenu);
+        projects.removeEventListener("click", removeBurgerMenu);
+        blog.removeEventListener("click", removeBurgerMenu);
       };
     }
   }, [pathname]);
