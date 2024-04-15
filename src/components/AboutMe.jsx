@@ -84,10 +84,7 @@ function AboutMe() {
         className="flex  mx-auto justify-center  flex-col items-center"
       >
         {/* first */}
-        <p
-          id="abouttext"
-          className=" text-4xl font-bold my-6 text-gray-600 mb-8"
-        >
+        <p id="abouttext" className=" font-bold my-6 text-gray-600 mb-8">
           Who am I?
         </p>
         {/* second */}
