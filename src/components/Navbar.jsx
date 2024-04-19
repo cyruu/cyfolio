@@ -14,7 +14,8 @@ function Navbar() {
     return slidePixel;
   };
 
-  // reset navbar
+  // reset navbar scroll and click
+
   // for scroll
   useEffect(() => {
     if (
