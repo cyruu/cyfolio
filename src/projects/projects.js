@@ -44,12 +44,12 @@ export const projects = [
     link: "https://react-tie-sheet.vercel.app/",
     tools: ["React", "Redux", "HTML", "CSS"],
   },
-  //project 6=> chat real time
+  //project 6=> chat real time with firebase
   {
     id: "chat-test",
     title: "Chat Test",
     image: chat,
     link: "https://chat-snowy-one-52.vercel.app/",
-    tools: ["React", , "HTML", "CSS"],
+    tools: ["React", "Firebase", "HTML", "CSS"],
   },
 ];
