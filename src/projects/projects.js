@@ -44,7 +44,7 @@ export const projects = [
     link: "https://react-tie-sheet.vercel.app/",
     tools: ["React", "Redux", "HTML", "CSS"],
   },
-  //project 6=> chat
+  //project 6=> chat real time
   {
     id: "chat-test",
     title: "Chat Test",
