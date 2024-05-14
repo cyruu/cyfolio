@@ -131,7 +131,11 @@ function AboutMe() {
         </div>
         <div className="resume flex flex-col">
           <p className="themeColor mb-5">Take a look at my Résumé</p>
-          <a href="#" className="button resumebutton ">
+          <a
+            href="../resume/cyrusResume.pdf"
+            target="_blank"
+            className="button resumebutton "
+          >
             Résumé
             <i className="ri-download-fill ml-2"></i>
           </a>
