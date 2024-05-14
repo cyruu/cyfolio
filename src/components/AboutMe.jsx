@@ -8,6 +8,8 @@ import react from "../images/react.png";
 import redux from "../images/redux.png";
 import tailwind from "../images/tailwind.png";
 import css from "../images/css.png";
+
+import cyrusResume from "../resume/cyrusResume.pdf";
 function AboutMe() {
   // In your React component
   useEffect(() => {
@@ -132,9 +134,9 @@ function AboutMe() {
         <div className="resume flex flex-col">
           <p className="themeColor mb-5">Take a look at my Résumé</p>
           <a
-            href="../resume/cyrusResume.pdf"
+            href={cyrusResume}
             target="_blank"
-            download="cyrusResume.pdf"
+            download="cyrusResume"
             className="button resumebutton "
           >
             Résumé
