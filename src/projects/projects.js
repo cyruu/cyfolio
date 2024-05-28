@@ -1,5 +1,6 @@
 import tictac from "../images/tictac.png";
 import todo from "../images/todo.png";
+import chatapp from "../images/chatapp.png";
 import chat from "../images/chat.png";
 import cart from "../images/cart.png";
 import tieSheet from "../images/tiesheet.png";
@@ -46,9 +47,9 @@ export const projects = [
   },
   //project 6=> chat real time with firebase
   {
-    id: "chat-test",
-    title: "Chat Test",
-    image: chat,
+    id: "realtime-chat",
+    title: "RealTime Chat",
+    image: chatapp,
     link: "https://chat-snowy-one-52.vercel.app/",
     tools: ["React", "Firebase", "HTML", "CSS"],
   },
