@@ -53,4 +53,13 @@ export const projects = [
     link: "https://chat-snowy-one-52.vercel.app/",
     tools: ["React", "Firebase", "HTML", "CSS"],
   },
+
+  //project 7=> stackoverflowclone
+  {
+    id: "stackoverflowclone",
+    title: "Stackoverflow Clone",
+    image: chatapp,
+    link: "https://next-stack-overflow-clone-k2uxmnl6g-cyruus-projects.vercel.app/",
+    tools: ["NextJS", "MongoDb", "Material UI", "Tailwind"],
+  },
 ];
