@@ -4,6 +4,7 @@ import chatapp from "../images/chatapp.png";
 import chat from "../images/chat.png";
 import cart from "../images/cart.png";
 import tieSheet from "../images/tiesheet.png";
+import stackoverflow from "../images/stackoverflow.png";
 export const projects = [
   // project 1 => tictactoe
   {
@@ -58,8 +59,8 @@ export const projects = [
   {
     id: "stackoverflowclone",
     title: "Stackoverflow Clone",
-    image: chatapp,
-    link: "https://next-stack-overflow-clone-k2uxmnl6g-cyruus-projects.vercel.app/",
+    image: stackoverflow,
+    link: "https://next-stack-overflow-clone.vercel.app/",
     tools: ["NextJS", "MongoDb", "Material UI", "Tailwind"],
   },
 ];
