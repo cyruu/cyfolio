@@ -60,7 +60,7 @@ export const projects = [
     id: "stackoverflowclone",
     title: "Stackoverflow Clone",
     image: stackoverflow,
-    link: "https://next-stack-overflow-clone.vercel.app/",
+    link: "https://nextjs-stack-overflow-clone.vercel.app/",
     tools: ["NextJS", "MongoDb", "Material UI", "Tailwind"],
   },
 ];
