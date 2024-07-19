@@ -5,6 +5,7 @@ import chat from "../images/chat.png";
 import cart from "../images/cart.png";
 import tieSheet from "../images/tiesheet.png";
 import stackoverflow from "../images/stackoverflow.png";
+import blogsite from "../images/blogsite.png";
 export const projects = [
   // project 1 => tictactoe
   {
@@ -62,5 +63,21 @@ export const projects = [
     image: stackoverflow,
     link: "https://next-stackoverflowclone.vercel.app/",
     tools: ["NextJS", "MongoDb", "Material UI", "Tailwind"],
+  },
+  //project 8=> blogsite
+  {
+    id: "codsoftblog",
+    title: "Blog Website",
+    image: blogsite,
+    link: "https://codsoft-blog-site.vercel.app/",
+    tools: [
+      "React",
+      "MongoDb",
+      "Express",
+      "NodeJS",
+      "Tailwind",
+      "Material UI",
+      "Cloudinary",
+    ],
   },
 ];
