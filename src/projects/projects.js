@@ -57,6 +57,7 @@ export const projects = [
   },
 
   //project 7=> stackoverflowclone
+  // need to add in database
   {
     id: "stackoverflowclone",
     title: "Stackoverflow Clone",
