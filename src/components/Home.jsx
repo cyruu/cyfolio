@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "../css/home.css";
-import cy from "../images/cy.jpg";
+import cy from "../images/profile.jpg";
 function Home() {
   useEffect(() => {
     const nav = document.getElementsByTagName("nav")[0];
