@@ -6,6 +6,7 @@ import cart from "../images/cart.png";
 import tieSheet from "../images/tiesheet.png";
 import stackoverflow from "../images/stackoverflow.png";
 import blogsite from "../images/blogsite.png";
+import sort from "../images/sort.png";
 export const projects = [
   // project 1 => tictactoe
   {
@@ -58,6 +59,13 @@ export const projects = [
 
   //project 7=> stackoverflowclone
   // need to add in database
+  {
+    id: "sortingVisualisation",
+    title: "Sorting Visualisation",
+    image: sort,
+    link: "https://react-sorting-visualisation.vercel.app/",
+    tools: ["React"],
+  },
   {
     id: "stackoverflowclone",
     title: "Stackoverflow Clone",
